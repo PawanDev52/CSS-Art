@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Css Art - Shapes</title>
+  <style>
+    body{padding:0;margin:0;}
+    .container{background:#fbb12f;width: 100vw;height: 100vh;display: grid;grid-template-columns: repeat(auto-fit, 320px);justify-items: center;align-items: center;gap: 20px;}
+    div.fff{background: #fff;}
+    .square, .circle{width: 150px;height: 150px;}
+    .circle{border-radius: 50%;}
+    .triangle{height: 0;width: 0;border-bottom: 150px solid #fff;border-left: 100px solid transparent;border-right: 100px solid transparent;}
+    .semicircle{width: 250px;height: 125px;border-radius: 125px 125px 0 0;}
+    .ellipse{width: 250px;height: 150px;border-radius: 50%;}
+    .parallelogram{width: 200px;height: 150px;transform: skew(20deg);}
+    .trapezium{height: 0;width:150px;border-bottom: 150px solid #fff;border-left: 60px solid transparent;border-right: 60px solid transparent;}
+    .right-triangle{height: 0;width: 0;border-bottom: 150px solid #fff;border-right: 150px solid transparent;}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="square fff"></div>
+    <div class="circle fff"></div>
+    <div class="triangle"></div>
+    <div class="semicircle fff"></div>
+    <div class="ellipse fff"></div>
+    <div class="parallelogram fff"></div>
+    <div class="trapezium"></div>
+    <div class="right-triangle"></div>
+  </div>
+</body>
+</html>
