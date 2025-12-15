@@ -6,7 +6,7 @@
   <title>Css Art - Shapes</title>
   <style>
     body{padding:0;margin:0;}
-    .container{background:#fbb12f;width: 100vw;height: 100vh;display: grid;grid-template-columns: repeat(auto-fit, 320px);justify-items: center;align-items: center;gap: 20px;}
+    .container{background: #fbb12f;display: grid;grid-template-columns: repeat(2, 1fr);justify-items: center;align-items: center;gap: 60px 20px;padding: 40px 20px 60px;}
     div.fff{background: #fff;}
     .square, .circle{width: 150px;height: 150px;}
     .circle{border-radius: 50%;}
@@ -16,6 +16,9 @@
     .parallelogram{width: 200px;height: 150px;transform: skew(20deg);}
     .trapezium{height: 0;width:150px;border-bottom: 150px solid #fff;border-left: 60px solid transparent;border-right: 60px solid transparent;}
     .right-triangle{height: 0;width: 0;border-bottom: 150px solid #fff;border-right: 150px solid transparent;}
+    .leaf{width: 150px;height: 150px;border-radius: 150px 0px;}
+    .star{height: 0;width: 0;border-bottom: 150px solid #fff;border-left: 100px solid transparent;border-right: 100px solid transparent;position: relative;}
+    .star:before{position: absolute;content: "";width: 0;height: 0;border-top: 150px solid #fff;border-left: 100px solid transparent;border-right: 100px solid transparent;top:50px;left: -100px;}
   </style>
 </head>
 <body>
@@ -28,6 +31,8 @@
     <div class="parallelogram fff"></div>
     <div class="trapezium"></div>
     <div class="right-triangle"></div>
+    <div class="leaf fff"></div>
+    <div class="star"></div>
   </div>
 </body>
 </html>
