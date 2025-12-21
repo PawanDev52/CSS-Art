@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{background: #fbb12f;padding:0;margin:0;}
+    .container{display:flex;justify-content: center;align-items: center;width: 100vw;height: 100vh;}
+    .camera{width: 240px;height: 140px;background: #fff;border-radius: 10px;position: relative;}
+    .camera::before{position: absolute;content: "";width: 80px;height: 0;border-bottom: 25px solid #fff;border-left: 10px solid transparent;border-right: 10px solid transparent;top: -25px;left: 70px;}
+    .camera:after{position: absolute;content: "";height: 85px;width: 85px;border: 10px solid #fbb12f;border-radius: 50%;top: 15px;left: 68px;box-shadow: 100px -45px 0 -45px #fbb12f;}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="camera"></div>
+  </div>
+</body>
+</html>
